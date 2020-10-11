@@ -23,8 +23,13 @@
     </div>
     <header class="header-alt-screen">
         <div class="header-alt-screen-column">
-            <a href="chats.html"><i class="fas fa-chevron-left fa-sm"></i></a>
+            <button onclick="goBack()"><i class="fas fa-chevron-left fa-sm"></i></button>
         </div>
+        <script>
+            function goBack(){
+                window.history.back();
+            }
+        </script>
         <div class="header-alt-screen-column">
             <h1 class="screen-header-title">RMRTalk</h1>
         </div>

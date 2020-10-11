@@ -46,11 +46,7 @@
 .user-component__column:last-child{
     color: rgba(0,0,0,0.5);
 }
-.user-component__column__two{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
+
 .user-component__time{
     display: block;
     color: var(--gray);
@@ -60,7 +56,7 @@
 .user-component__text i{
     color: tomato;
 }
-.user-component__additional__friends{
+.user-component--column{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
