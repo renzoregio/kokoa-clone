@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chatting with RMRTalk</title>
+</head>
+<body id="chat-screen">
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>Verizon</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>11:11</span>
+        </div>
+        <div class="status-bar__column">
+            <span>infinite%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <header class="header-alt-screen">
+        <div class="header-alt-screen-column">
+            <a href="chats.html"><i class="fas fa-chevron-left fa-sm"></i></a>
+        </div>
+        <div class="header-alt-screen-column">
+            <h1 class="screen-header-title">RMRTalk</h1>
+        </div>
+        <div class="header-alt-screen-column">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-bars"></i></span>
+        </div>
+    </header>
+    <main class="main-screen main-chat">
+           <div class="chat-date-today__text">Sunday, October 11, 2020</div>
+       </div>
+       <div class="message-row">
+           <img src="https://i.pinimg.com/originals/7e/32/d7/7e32d704574ea967cb95d0b77ebf336c.jpg"/>
+           <div class="message-row__content">
+               <span class="message-row__author">Dad</span>
+               <div class="message-row__info">
+                   <span class="message-row__bubble">What are you doing?</span>
+                   <span class="message-row__timestamp">10:10</span>
+               </div>
+           </div>
+       </div>
+      <div class="message-row message-row--outgoing">
+          <div class="message-row__info message-row--outgoing-info">
+              <div class="message-row__bubble message-row--outgoing-bubble">I'm studying HTML and CSS</div>
+              <span class="message-row__timestamp">10:12</span>
+          </div>
+      </div>
+</main>
+   <form class="reply-form">
+       <div class="reply__column">
+        <i class="far fa-plus-square"></i>
+       </div>
+       <div class="reply__column">
+           <input type="text" placeholder="Type your message here"/>
+           <i class="far fa-grin-beam"></i>
+           <button>
+            <i class="far fa-paper-plane"></i>
+           </button>
+       </div>
+   </form>
+   <div id="no-mobile">
+       <span>YOUR SCREEN IS TOO BIG TO ACCESS RMRTALK</span>
+   </div>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>

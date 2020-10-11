@@ -13,8 +13,9 @@
 }
 .user-component__name{
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 400;
     margin-left: 10px;
+    color: black;
 }
 .user-component__message{
     color: var(--gray);
@@ -58,4 +59,9 @@
 }
 .user-component__text i{
     color: tomato;
+}
+.user-component__additional__friends{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }

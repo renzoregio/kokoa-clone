@@ -29,4 +29,13 @@
 }
 .header-alt-screen-column button{
     font-size: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+.header-alt-screen button:focus{
+    outline: none;
+}
+.header-alt-screen button:hover{
+    cursor: pointer;
 }

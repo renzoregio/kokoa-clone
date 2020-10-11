@@ -8,6 +8,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
 }
 .more__icons:hover{
     animation: icon-hover-animation 0.5s ease-in-out forwards;
@@ -21,11 +23,15 @@
     display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
-    border-bottom: var(--border-line);
+    justify-content: space-between;
+    width: 43%;
 }
 .open__chat--position{
     position: relative;
     right: -70px;
+}
+.more__suggestions{
+    border-top: var(--border-line);
 }
 .more__suggestions span{
     margin-top: 30px;
@@ -35,13 +41,15 @@
 }
 .more__bottom__icons__row{
     display: flex;
-    align-items: flex-start;
+    width: 33%;
+    justify-content: space-between;
 }
 
 .more__bottom__icons{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    text-align: center;
+    
 }
 .more__bottom__icon{
     background-color: var(--yellow);
