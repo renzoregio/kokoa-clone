@@ -19,14 +19,13 @@
     font-size: 28px;
     font-weight: 600;
 }
+
 .header-alt-screen-column:last-child{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    margin-right: 25px;
 }
-.header-alt-screen-column:last-child span:first-child{
-    padding-right: 20px;
+.header-alt-screen-column:last-child span{
+    margin-right: 25px;
 }
 .header-alt-screen-column button{
     font-size: 25px;
