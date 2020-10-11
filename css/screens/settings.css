@@ -1,0 +1,63 @@
+.main-settings{
+    height: 105vh;
+}
+
+.settings-options{
+    font-size: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@keyframes settingsIconAnimation{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotateX(360deg) scale(2);
+        color: goldenrod;
+    }
+}
+.settings-options i:hover{
+    animation: settingsIconAnimation 0.5s ease-in-out forwards;
+}
+.settings-options i{
+    margin-right: 25px;
+    color: var(--gray);
+}
+
+@keyframes settingsSpanAnimation{
+    from{
+        transform: none;
+    }
+    to{
+        transform: translateY(30px) translateX(-50px);
+        color:goldenrod;
+    }
+}
+
+.settings-options__column span:hover{
+    animation: settingsSpanAnimation 0.5s ease-in-out forwards;
+}
+
+.settings-options__column{
+    display: flex;
+    align-items: center ;
+}
+.settings-options__column:last-child{
+    color: var(--gray);
+}
+.settings-options:nth-child(3){
+    border: none;
+}
+.settings-screen__divider{
+    border: 1px solid rgba(0,0,0,0.1);
+    width: 100vw;
+    position: relative;
+    left: -25px;
+}
+.settings-options__column .fa-question-circle{
+    padding-left: 8px;
+    color: orangered;   
+}

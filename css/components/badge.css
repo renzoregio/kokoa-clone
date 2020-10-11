@@ -1,0 +1,58 @@
+
+@keyframes notification-animation{
+    0%{
+        transform: none;
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: none;
+    }
+    75%{
+        transform: translateY(10px)
+    }
+    100%{
+        transform: none;
+    }
+}
+
+.badge{
+    background-color: tomato;
+    border: 2px solid white;
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    animation: notification-animation 1s linear infinite;
+}
+
+@keyframes chats-badge-animation{
+    0%{
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        box-shadow: 0px 2px 10px 0px;
+    }
+    100%{
+        transform: none;
+    }
+}
+
+.chats-badge{
+    background-color: tomato;
+    border: 2px solid white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: chats-badge-animation 1s linear infinite;
+}

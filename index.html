@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO RMRTALK</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>Verizon</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>11:11</span>
+        </div>
+        <div class="status-bar__column">
+            <span>infinite%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to RMRTalk</h1>
+        <p class="welcome-header__text">If you have an RMRTalk Account, please log in with your credentials below.</p>
+    </header>
+    <form action="friends.html" method="get" id="login-form">
+        <input name="user" type="text" required placeholder="Email or Phone Number"/>
+        <input name="password" type="password" required placeholder="Password" minlength="10"/>
+        <input type="submit" value="Log In"/>
+        <input type="submit" value="Sign Up"/>
+        <a href="#">Find RMRTalk Account or Password</a>
+    </form>
+    <div id="no-mobile">
+        <span>YOUR SCREEN IS TOO BIG TO ACCESS RMRTALK</span>
+    </div>
+    <div id="screen-orientation">
+        <span>PLEASE ROTATE YOUR SCREEN TO PORTRAIT MODE. RMRTALK DOES NOT SUPPORT LANDSCAPE MODE. THANK YOU!</span>
+    </div>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>

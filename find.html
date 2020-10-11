@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - RMRTalk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>Verizon</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>11:11</span>
+        </div>
+        <div class="status-bar__column">
+            <span>infinite%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <header class="screen-header">
+        <h1 class="screen-header__title">FIND</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-2x"></i></span>
+            <span><a href="settings.html"><i class="fas fa-cog fa-2x"></i></a></span>
+            <div class="screen-header__icons__find__dot"></div>
+        </div>
+    </header>
+    <main class="main-screen">
+        <div class="find-icons">
+            <div class="find-icons__icon">
+                <i class="fas fa-qrcode"></i>
+                <span>QR Code</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="far fa-address-book"></i>
+                <span id="find-icons__contacts-text">Add by Contacts</span>
+        
+            </div>
+            <div class="find-icons__icon">
+                <i class="fas fa-fingerprint"></i>
+                <span>Add by ID</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="far fa-envelope"></i>
+                <span>Invite</span>
+            </div>
+        </div>
+        <div class="recommended__friends">
+            <h6>Recommended Friends</h6>
+            <span>You have no recommended friends.</span>
+        </div>
+        <div class="open-chat__header">
+            <h2>Open Chat</h2>
+            <h4>Go to Openchat Home <i class="fas fa-chevron-right fa-sm"></i></h4>
+        </div>
+        <div class="open-chat">
+            <div class="open-chat__content">
+                <h2>#BTS</h2>
+                <h4>#bts#army#friends</h4>
+                <div class="open-chat__content__members">
+                    <img src="screenshots/copy.jpeg">
+                    <span class="open-chat__content__members__number">802 Members</span>
+                    <div class="divider">|</div>
+                    <span class="open-chat__content__members__active">Active</span>
+                </div>
+            </div>
+            <div class="open-chat__content">
+                <div class="open-chat__content__image__section">
+                    <img class="open-chat__content__image" src="screenshots/copy.jpeg"/>
+                <div class="open-chat__content__likes"><i class="fas fa-heart fa-xs"></i>326</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="chats.html"><span class="nav__notification badge">3</span><i class="far fa-comment fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="more.html"><span id="nav__dot"></span><i class="fas fa-ellipsis-h fa-2x"></i></a></li>
+        </ul>
+    </nav>
+    <div id="no-mobile">
+        <span>YOUR SCREEN IS TOO BIG TO ACCESS RMRTALK</span>
+    </div>
+    <div id="screen-orientation">
+        <span>PLEASE ROTATE YOUR SCREEN TO PORTRAIT MODE. RMRTALK DOES NOT SUPPORT LANDSCAPE MODE. THANK YOU!</span>
+    </div>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>

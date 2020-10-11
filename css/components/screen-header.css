@@ -1,0 +1,78 @@
+.screen-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.screen-header__title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 28px;
+}
+.screen-header__icons span{
+    margin-right: 28px;
+}
+.screen-header__icons{
+    position: relative;
+}
+.screen-header__icons__find__dot{
+    height: 7px;
+    width:7px;
+    background-color: tomato;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: -5px;
+}
+
+@keyframes icon-hover{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+.screen-header__icons .fa-cog:hover{
+    animation: icon-hover 1s linear infinite;
+}
+
+@keyframes headphones-animation{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+.screen-header__icons .fa-headphones-alt:hover{
+    animation: headphones-animation 1s ease-in-out infinite;
+}
+
+@keyframes searchAnimation{
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: rotateX(60deg);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+.screen-header__icons .fa-search:hover{
+    animation: searchAnimation 0.5s ease-in-out infinite;
+}
+
+.header-alt-screen button{
+    background-color: transparent;
+    border: none;
+}
+.header-alt-screen button:focus{
+    outline: none;
+}

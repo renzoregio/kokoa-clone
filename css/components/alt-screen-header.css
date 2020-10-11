@@ -1,0 +1,33 @@
+.header-alt-screen{
+    padding-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+.header-alt-screen-column{
+    width:33%;
+}
+.header-alt-screen-column:first-child{
+    margin-left: 25px;
+}
+.screen-header-title,
+.header-alt-screen-column:nth-child(2) h1{
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.header-alt-screen-column:last-child{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 25px;
+}
+.header-alt-screen-column:last-child span:first-child{
+    padding-right: 20px;
+}
+.header-alt-screen-column button{
+    font-size: 25px;
+}

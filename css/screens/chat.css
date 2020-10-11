@@ -1,0 +1,217 @@
+#chat-screen{
+    background-color: #abc1d1;
+    height: 1000vh;
+}
+#chat-screen .header-alt-screen,
+#chat-screen .status-bar{
+    top: 0;
+    margin:0;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #abc1d1;
+}
+#chat-screen .status-bar{
+    z-index: 2;
+}
+#chat-screen .header-alt-screen{
+    z-index: 1;
+    padding-top: 50px;
+    height: 90px;
+}
+@keyframes fadeinchat{
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+.main-chat{
+    margin-top:120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeinchat 0.5s linear;
+}
+
+
+.chat-date-today__text{
+    background-color: #92a4b2;
+    color:white;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 15px;
+}
+@keyframes fadeinmessage{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+        transform: none;
+    }
+}
+
+.message-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+@keyframes imagehover{
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+.message-row img:hover{
+    animation: imagehover 0.7s ease-in-out forwards;
+}
+
+.message-row img{
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    padding-right: 10px;
+}
+.message-row__author{
+    font-size: 15px;
+    padding-bottom: 5px;
+    display: block;
+    opacity: 0.8;
+}
+
+.message-row__info{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.message-row__bubble{
+    background-color:white;
+    padding: 15px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right:10px;
+    border-top-left-radius: 0;
+    animation: fadeinmessage 0.8s linear forwards;
+    transform: translateX(-70px)
+
+}
+.message-row__timestamp{
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+@keyframes fadeinmessageoutgoing{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform:none;
+    }
+}
+
+.message-row--outgoing{
+    justify-content: flex-end;
+    padding-top: 25px;
+}
+.message-row--outgoing-info{
+    flex-direction: row-reverse;
+}
+.message-row--outgoing-bubble{
+    background-color: var(--yellow);
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    margin-left: 10px;
+    margin-right: 0;   
+    animation: fadeinmessageoutgoing 0.8s linear forwards;
+    transform: translateX(70px);
+
+ 
+}
+.reply-form{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.reply-form .reply__column:first-child{
+    width: 10%;
+}
+.reply-form .reply__column:last-child{
+    width: 90%;
+    position: relative;
+}
+.reply__column input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: var(--border-line);
+    transition: all 0.3s ease-in-out;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button{
+    position: absolute;
+    right: 0px;
+}
+.reply__column:last-child > i{
+    right: 50px;
+    color: var(--gray);
+    bottom: 10px;
+}
+.reply__column:last-child button{
+    background-color: var(--yellow);
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: none;
+    right: 4px;
+    bottom: 5px;
+}
+.reply__column:last-child button i{
+    font-size: 20px;
+}
+
+.reply-form:focus-within{
+    transform: translateY(60px);
+}
+
+.reply-form:focus-within input{
+    width:97vw;
+    transform: translateX(-12%) translateY(-70px);
+    box-shadow: 0px 1px 5px 0px;
+}
+
+.reply-form .fa-plus-square,
+.reply__column i,
+.reply__column button{
+    transition: opacity 0.2s ease-in-out;
+}
+
+.reply-form:focus-within .fa-plus-square,
+.reply__column:focus-within i,
+.reply__column:focus-within button{
+    opacity: 0;
+}
