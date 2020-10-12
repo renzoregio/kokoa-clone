@@ -21,6 +21,7 @@
     color: var(--gray);
     padding-top: 8px;
     margin-left:10px;
+    transition: all 0.3s ease-in-out;
 
 }
 .user-component__avatar--lg{
@@ -62,9 +63,8 @@
     align-items: flex-start;
 }
 
-.user-component__text{
-    transition: all 0.5s ease-in-out;
-}
-.user-component__text:hover{
+
+.user-component__message:hover{
     font-size: 20px;
+    font-weight: 600;
 }
