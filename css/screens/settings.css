@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 @keyframes settingsIconAnimation{
     from{
@@ -43,7 +44,7 @@
 
 .settings-options__column{
     display: flex;
-    align-items: center ;
+    align-items: center;
 }
 .settings-options__column:last-child{
     color: var(--gray);
