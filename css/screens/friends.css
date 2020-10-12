@@ -30,6 +30,7 @@
 }
 .friends-screen{
     margin-left: var(--left-space);
+    height: 100vh;
 }
 
 @keyframes start-splash-screen {

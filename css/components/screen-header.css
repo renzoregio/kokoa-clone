@@ -13,7 +13,8 @@
     margin-left: 28px;
 }
 .screen-header__icons span{
-    margin-right: 28px;
+    margin-right: 20px;
+    font-size: 14px;
 }
 .screen-header__icons{
     position: relative;
