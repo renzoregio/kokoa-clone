@@ -56,8 +56,15 @@
 .user-component__text i{
     color: tomato;
 }
-.user-component--column{
+.user-component--column-friends{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.user-component__text{
+    transition: all 0.5s ease-in-out;
+}
+.user-component__text:hover{
+    font-size: 20px;
 }
