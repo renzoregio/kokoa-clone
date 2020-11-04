@@ -1,89 +1,41 @@
-.friends-display__header{
-    background-color: #fafafa;
-    display: block;
-    text-align: center;
-    padding: 15px 0px;
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-.friends-display__header i{
-    color: rgba(150, 148, 148, 0.404);
-    margin: 0px 10px;
+.friends-screen {
+  height: 100vh;
+  margin: 20px;
 }
 
-.friends-channel{
-    padding-top: 15px;
-    border-top: var(--border-line);
-    margin-right: var(--right-space);
+.friends-display__header {
+  display: block;
+  text-align: center;
+  margin: 0px 20px;
+  font-size: 22px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 0px 7px;
+  color: black;
+  border-radius: 10px;
+  background-color: #242021;
+}
+.friends-display__header i,
+.friends-display__header span {
+  color: white;
+  margin: 0px 10px;
 }
 
-.friends-channel__header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
-    color: rgba(0,0,0,0.5);
-}
-.friends-channel__text{
-    display: flex;
-    justify-content: space-between;
-}
-.friends-screen{
-    margin-left: var(--left-space);
-    height: 100vh;
+.friends-channel {
+  margin-top: 15px;
+  border-top: 4px solid black;
 }
 
-@keyframes start-splash-screen {
-    0%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 1;
-        transform: scale(2);
-    }
-    100%{
-        opacity: 0;
-        visibility: hidden;
-    }
+.friends-channel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0px;
+  color: black;
+  font-weight: 500;
 }
-@keyframes splash-screen-title{
-    0%{
-        transform: none;
-    }
-    50%{
-        transform: scale(3);
-        color: gold;
-    }
-    100%{
-        transform: none;
-        color: white;
-    }
-    
-}
-#splash-screen{
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    position: absolute;
-    background-color: var(--yellow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: start-splash-screen  5s ease-in-out forwards;
-
-}
-.splash-screen__content i{
-    font-size: 135px;
-    color: black;
-}
-.splash-screen__content h1{
-    position: relative;
-    bottom: -75px;
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
-    display: block;
-    text-align: center;
-    animation: splash-screen-title 2s ease-in-out forwards;
-
+.friends-channel__text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
 }

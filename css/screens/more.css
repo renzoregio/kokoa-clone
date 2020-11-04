@@ -1,95 +1,105 @@
-.more__icons__row__one{
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
+.more__icons__row__one {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
-.more__icons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    flex-wrap: wrap;
-}
-.more__icons:hover{
-    animation: icon-hover-animation 0.5s ease-in-out forwards;
+.more__icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
-.more__icons i{
-    padding-bottom: 20px;
-    font-size: 40px;
-}
-.more__icons__row__two{
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    justify-content: space-between;
-    width: 43%;
-}
-.open__chat--position{
-    position: relative;
-    right: -70px;
-}
-.more__suggestions{
-    border-top: var(--border-line);
-}
-.more__suggestions span{
-    margin-top: 30px;
-    font-size: 18px;
-    display: block;
-    margin-bottom: 30px;
-}
-.more__bottom__icons__row{
-    display: flex;
-    width: 33%;
-    justify-content: space-between;
+.more__icons button {
+  background-color: #242021;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  height: 80px;
+  margin-bottom: 20px;
 }
 
-.more__bottom__icons{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-}
-.more__bottom__icon{
-    background-color: var(--yellow);
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.more__icons i {
+  padding: 15px;
+  font-size: 35px;
+  color: white;
 }
 
-@keyframes bottom-icons-hover{
-    from{
-        transform: none;
-    }
-    to{
-        color: black;
-        transform: scale(1.5);
-    }
+.more__icons button:focus {
+  animation: iconAnimation 0.1s linear forwards;
+  outline: none;
+}
+.more__icons__row__two {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-between;
+  width: 43%;
+}
+.open__chat--position {
+  position: relative;
+  right: -70px;
+}
+.more__suggestions {
+  border-top: var(--border-line);
+}
+.more__suggestions span {
+  margin-top: 30px;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 30px;
+}
+.more__bottom__icons__row {
+  display: flex;
+  width: 33%;
+  justify-content: space-between;
 }
 
-.more__bottom__icons i:hover{
-    animation: bottom-icons-hover 0.5s ease-in-out forwards;
+.more__bottom__icons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.more__bottom__icons i{
-    font-size: 35px;
+@keyframes iconColorEffects {
+  0% {
+    background-color: wheat;
+  }
+  50% {
+    background-color: #242021;
     color: white;
+  }
+  100% {
+    background-color: whitesmoke;
+  }
 }
-.more__bottom__icons:nth-child(2){
-    position: relative;
-    right: -30px;
+.more__bottom__icon {
+  animation: iconColorEffects 2s linear infinite;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
 }
 
-.more__bottom__icons:hover span{
-    animation: bottom-icons-hover 0.5s ease-in-out forwards;
+.more__bottom__icons i {
+  font-size: 45px;
+  color: white;
 }
 
-.more__bottom__icons span{
-    position: relative;
-    top: -15px;
+.more__bottom__icons:nth-child(2) {
+  position: relative;
+  right: -30px;
 }
 
+.more__bottom__icons:hover span {
+  animation: bottom-icons-hover 0.5s ease-in-out forwards;
+}
+
+.more__bottom__icons span {
+  position: relative;
+  top: -15px;
+}

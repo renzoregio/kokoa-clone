@@ -1,103 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>More - RMRTalk</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="status-bar">
-        <div class="status-bar__column">
-            <span>Verizon</span>
-            <i class="fas fa-wifi"></i>
-        </div>
-        <div class="status-bar__column">
-            <span>11:11</span>
-        </div>
-        <div class="status-bar__column">
-            <span>infinite%</span>
-            <i class="fas fa-battery-full fa-lg"></i>
-            <i class="fas fa-bolt"></i>
-        </div>
+      <div class="status-bar__column">
+        <span>Verizon</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>11:11</span>
+      </div>
+      <div class="status-bar__column">
+        <span>12%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+      </div>
     </div>
     <header class="screen-header">
-        <h1 class="screen-header__title">MORE</h1>
-        <div class="screen-header__icons">
-            <span><i class="fas fa-search fa-2x"></i></span>
-            <span><i class="fas fa-headphones-alt fa-2x"></i></span>
-            <span><a href="settings.html"><i class="fas fa-cog fa-2x"></i></a></span>
-        </div>
+      <h1 class="screen-header__title">MORE</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-2x"></i></span>
+        <span><i class="fas fa-headphones-alt fa-2x"></i></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-2x"></i></a
+        ></span>
+      </div>
     </header>
     <main class="main-screen">
-    <div class="user-component">
+      <div class="user-component">
         <div class="user-component__column">
-            <img class="user-component__avatar user-component__avatar--lg" src="screenshots/copy.jpeg"/>
-            <div class="user-component__text">
-                <h2 class="user-component__name">Renzo</h2>
-                <h4 class="user-component__message">+1 123-456-7891<i class="fas fa-exclamation-circle"></i></h4>
-            </div>
+          <img
+            class="user-component__avatar user-component__avatar--lg"
+            src="screenshots/copy.jpeg"
+          />
+          <div class="user-component__text">
+            <h2 class="user-component__name">Renzo</h2>
+            <h4 class="user-component__message">
+              +1 123-456-7891<i class="fas fa-exclamation-circle"></i>
+            </h4>
+          </div>
         </div>
         <div class="user-component__column__two">
-            <span><i class="far fa-comment-alt fa-2x"></i></span>
+          <span><i class="far fa-comment-alt fa-2x"></i></span>
         </div>
-    </div>
-    <div class="more__icons__row__one">
+      </div>
+      <div class="more__icons__row__one">
         <div class="more__icons">
-            <i class="far fa-calendar-check fa-2x"></i>
-            <span>Calendar</span>
-        </div>
-        <div class="more__icons">
-            <i class="far fa-folder-open"></i>
-            <span>Talk Drive</span>
+          <button><i class="far fa-calendar-check fa-2x"></i></button>
+          <span>Calendar</span>
         </div>
         <div class="more__icons">
-            <i class="far fa-grin-tongue-wink"></i>
-            <span>Emoticons</span>
+          <button><i class="far fa-folder-open"></i></button>
+          <span>Talk Drive</span>
         </div>
         <div class="more__icons">
-            <i class="fas fa-brush"></i>
-            <span>Themes</span>
-        </div>
-    </div>
-    <div class="more__icons__row__two">
-        <div class="more__icons">
-            <i class="fas fa-key"></i>
-            <span>Account</span>
+          <button><i class="far fa-grin-tongue-wink"></i></button>
+          <span>Emoticons</span>
         </div>
         <div class="more__icons">
-            <i class="fas fa-sms"></i>
-            <span>Openchat</span>
+          <button><i class="fas fa-brush"></i></button>
+          <span>Themes</span>
         </div>
-    </div>
-        <div class="more__suggestions">
-            <span>Suggestions</span>
-            <div class="more__bottom__icons__row">
-                <div class="more__bottom__icons">
-                    <div class="more__bottom__icon">
-                    <i class="fas fa-quote-right"></i></div>
-                    <span>Story</span>
-                </div>
-                <div class="more__bottom__icons">
-                    <div class="more__bottom__icon">
-                    <i class="fas fa-university"></i></div>
-                    <span>Bank</span>
-                </div>
+      </div>
+      <div class="more__icons__row__two">
+        <div class="more__icons">
+          <button><i class="fas fa-key"></i></button>
+          <span>Account</span>
+        </div>
+        <div class="more__icons">
+          <button><i class="fas fa-sms"></i></button>
+          <span>Openchat</span>
+        </div>
+      </div>
+      <div class="more__suggestions">
+        <span>Suggestions</span>
+        <div class="more__bottom__icons__row">
+          <div class="more__bottom__icons">
+            <div class="more__bottom__icon">
+              <i class="fas fa-quote-right"></i>
             </div>
+            <span>Story</span>
+          </div>
+          <div class="more__bottom__icons">
+            <div class="more__bottom__icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <span>Bank</span>
+          </div>
         </div>
-        
-</main>
+      </div>
+    </main>
     <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="chats.html"><span class="nav__notification badge">3</span><i class="far fa-comment fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="more.html"><span id="nav__dot"></span><i class="fas fa-ellipsis-h fa-2x"></i></a></li>
-        </ul>
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html"
+            ><span class="nav__notification badge">3</span
+            ><i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><span id="nav__dot"></span><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
     </nav>
     <div id="no-mobile">
-        <span>YOUR SCREEN IS TOO BIG TO ACCESS RMRTALK</span>
+      <span>YOUR SCREEN IS TOO BIG TO ACCESS RMRTALK</span>
     </div>
-    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,70 +1,96 @@
 .user-component,
-.user-component__column{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.user-component__column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.user-component__column{
-    margin-bottom:20px;
-}
-.user-component__avatar{
-    height: 80px;
-    border-radius: 30px;
-}
-.user-component__name{
-    font-size: 22px;
-    font-weight: 400;
-    margin-left: 10px;
-    color: black;
-}
-.user-component__message{
-    color: var(--gray);
-    padding-top: 8px;
-    margin-left:10px;
-    transition: all 0.3s ease-in-out;
 
+.user-component {
+  padding: 10px 5px;
+  margin: 0px 17px;
 }
-.user-component__avatar--lg{
-    height: 90px;
-    width: 90px;
-}
-.user-component__avatar--sm{
-    height:60px;
-    width:60px;
+
+@keyframes hoverEffect {
+  0% {
+    transform: none;
+  }
+  50% {
     border-radius: 20px;
-}
-.user-component__avatar--md{
-    height: 70px;
-    width: 70px;
-}
-.user-component__column i{
-    position: relative;
-    right: -7px;
-}
-.user-component__name--not-bold{
-    font-weight: 400;
-}
-.user-component__column:last-child{
-    color: rgba(0,0,0,0.5);
+  }
+  100% {
+    transform: scale(1.1);
+    background-color: rgba(90, 90, 90, 0.5);
+    box-shadow: 2px 4px 2px 0px;
+    border-radius: 20px;
+  }
 }
 
-.user-component__time{
-    display: block;
-    color: var(--gray);
-    font-size: 17px;
-    padding-bottom: 10px;
-}
-.user-component__text i{
-    color: tomato;
-}
-.user-component--column-friends{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.user-component:hover {
+  animation: hoverEffect 0.1s linear forwards;
 }
 
+.user-component__avatar {
+  border-radius: 20px;
+  box-shadow: 0px 7px;
+  border: 2px solid black;
+}
+.user-component__name {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
 
-.user-component__message:hover{
-    font-size: 20px;
-    font-weight: 600;
+.user-component__status__message {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.user-component__channel-btn {
+  border-radius: 50%;
+  background-color: white;
+  padding: 5px 8px;
+  color: #242021;
+  box-shadow: var(--box-shadow);
+  animation: iconColorEffects 1s linear infinite;
+}
+
+.user-component__message {
+  margin-left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.user-component__avatar--lg {
+  height: 100px;
+  width: 100px;
+}
+.user-component__avatar--sm {
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 0px 7px;
+}
+.user-component__column i {
+  position: relative;
+  right: -7px;
+}
+.user-component__name--not-bold {
+  font-weight: 400;
+}
+.user-component__column:last-child {
+  color: white(0, 0, 0, 0.5);
+}
+
+.user-component__time {
+  display: block;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+.user-component__text i {
+  color: tomato;
+}
+.user-component--column-friends {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

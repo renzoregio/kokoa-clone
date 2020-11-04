@@ -1,110 +1,108 @@
-
-.nav{
-    background-color: #f9f9fa;
-    padding: 30px 50px;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    box-sizing: border-box;
-    border-top: 1px solid rgba(87, 84, 84, 0.199)
+.nav {
+  background-color: #242021;
+  padding: 30px 50px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(87, 84, 84, 0.199);
 }
-.nav__list{
-    display: flex;
-    justify-content: space-between;
+.nav__list {
+  display: flex;
+  justify-content: space-between;
 }
-.nav__btn{
-    position: relative;
-    will-change: animation;
+.nav__btn {
+  position: relative;
+  will-change: animation;
 }
-.nav__btn i{
-    transition: transform 0.5s ease-in-out;
+.nav__btn i {
+  transition: transform 0.2s ease-in-out;
+  color: white;
 }
-.nav__btn i:hover{
-    transform: scale(1.5);
+.nav__btn i:hover {
+  transform: scale(1.5);
 }
-.nav__link{
-    color: #2e363e;
+.nav__link {
+  color: #2e363e;
 }
-.nav__notification{
-    position: absolute;
-    left: 15px;
-    bottom: 20px;
-}
-
-@keyframes navdotAnimation{
-    from{
-        transform: none;
-    }
-    to{
-        background-color: red;
-        box-shadow: 0px 2px 10px 0px;
-    }
+.nav__notification {
+  position: absolute;
+  left: 15px;
+  bottom: 20px;
 }
 
-#nav__dot{
-    background-color: var(--yellow);
-    height: 10px;
-    width: 10px;
-    border-radius: 10px;
-    display: block;
-    position: absolute;
-    left: 30px;
-    bottom: 30px;
-    animation: navdotAnimation 3s ease-in-out infinite;
+@keyframes navdotAnimation {
+  from {
+    transform: none;
+  }
+  to {
+    background-color: red;
+    box-shadow: 0px 2px 10px 0px;
+  }
 }
 
-@keyframes nav-first-animation{
-    from{
-        transform: translateX(-80px);
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        transform: none;
-    }
-}
-@keyframes nav-second-animation{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        transform: none;
-    }
+#nav__dot {
+  background-color: var(--yellow);
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  animation: navdotAnimation 3s ease-in-out infinite;
 }
 
-@keyframes nav-third-animation{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        transform: none;
-    }
+@keyframes nav-first-animation {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes nav-second-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
+@keyframes nav-third-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 
-.nav__btn:first-child{
-    animation: nav-first-animation 0.7s ease-in-out;
+.nav__btn:first-child {
+  animation: nav-first-animation 0.7s ease-in-out;
 }
 
 .nav__btn:nth-child(2),
-.nav__btn:nth-child(3){
-    animation: nav-second-animation 0.7s ease-in-out forwards;
-    transform: translateY(80px);
+.nav__btn:nth-child(3) {
+  animation: nav-second-animation 0.7s ease-in-out forwards;
+  transform: translateY(80px);
 }
-.nav__btn:nth-child(2){
-    animation-delay: 0.2s;
-    opacity: 0;
+.nav__btn:nth-child(2) {
+  animation-delay: 0.2s;
+  opacity: 0;
 }
-.nav__btn:nth-child(3){
-    animation-delay: 0.4s;
-    opacity: 0;
+.nav__btn:nth-child(3) {
+  animation-delay: 0.4s;
+  opacity: 0;
 }
-.nav__btn:last-child{
-    animation: nav-third-animation 0.7s ease-in-out forwards;
-    animation-delay: 0.6s;
-    transform: translateX(80px);
-    opacity: 0;
-
+.nav__btn:last-child {
+  animation: nav-third-animation 0.7s ease-in-out forwards;
+  animation-delay: 0.6s;
+  transform: translateX(80px);
+  opacity: 0;
 }

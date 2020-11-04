@@ -1,92 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find - RMRTalk</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="status-bar">
-        <div class="status-bar__column">
-            <span>Verizon</span>
-            <i class="fas fa-wifi"></i>
-        </div>
-        <div class="status-bar__column">
-            <span>11:11</span>
-        </div>
-        <div class="status-bar__column">
-            <span>infinite%</span>
-            <i class="fas fa-battery-full fa-lg"></i>
-            <i class="fas fa-bolt"></i>
-        </div>
+      <div class="status-bar__column">
+        <span>Verizon</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>11:11</span>
+      </div>
+      <div class="status-bar__column">
+        <span>12%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+      </div>
     </div>
     <header class="screen-header">
-        <h1 class="screen-header__title">FIND</h1>
-        <div class="screen-header__icons">
-            <span><i class="fas fa-search fa-2x"></i></span>
-            <span><a href="settings.html"><i class="fas fa-cog fa-2x"></i></a></span>
-            <div class="screen-header__icons__find__dot"></div>
-        </div>
+      <h1 class="screen-header__title">FIND</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-2x"></i></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-2x"></i></a
+        ></span>
+        <div class="screen-header__icons__find__dot"></div>
+      </div>
     </header>
     <main class="main-screen">
-        <div class="find-icons">
-            <div class="find-icons__icon">
-                <i class="fas fa-qrcode"></i>
-                <span>QR Code</span>
-            </div>
-            <div class="find-icons__icon">
-                <i class="far fa-address-book"></i>
-                <span>Add by Contacts</span>
-        
-            </div>
-            <div class="find-icons__icon">
-                <i class="fas fa-fingerprint"></i>
-                <span>Add by ID</span>
-            </div>
-            <div class="find-icons__icon">
-                <i class="far fa-envelope"></i>
-                <span>Invite</span>
-            </div>
+      <div class="find-icons">
+        <div class="find-icons-row">
+          <button><i class="fas fa-qrcode"></i></button>
+          <span>QR Code</span>
         </div>
-        <div class="recommended__friends">
-            <h6>Recommended Friends</h6>
-            <span>You have no recommended friends.</span>
+        <div class="find-icons-row">
+          <button><i class="far fa-address-book"></i></button>
+          <span>Contacts</span>
         </div>
-        <div class="open-chat__header">
-            <h2>Open Chat</h2>
-            <h4>Go to Openchat Home <i class="fas fa-chevron-right fa-sm"></i></h4>
+        <div class="find-icons-row">
+          <button><i class="fas fa-fingerprint"></i></button>
+          <span>ID</span>
         </div>
-        <div class="open-chat">
-            <div class="open-chat__content">
-                <h2>#BTS</h2>
-                <h4>#bts#army#friends</h4>
-                <div class="open-chat__content__members">
-                    <img src="screenshots/copy.jpeg">
-                    <span class="open-chat__content__members__number">802 Members</span>
-                    <div class="divider">|</div>
-                    <span class="open-chat__content__members__active">Active</span>
-                </div>
+        <div class="find-icons-row">
+          <button><i class="far fa-envelope"></i></button>
+          <span>Invite</span>
+        </div>
+      </div>
+      <div class="recommended__friends">
+        <h6>Recommended Friends</h6>
+        <span>You have no recommended friends.</span>
+      </div>
+      <div class="open-chat__header">
+        <h2>Open Chat</h2>
+        <h4>Go to Openchat Home <i class="fas fa-chevron-right fa-sm"></i></h4>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__content">
+          <h2>#BTS</h2>
+          <h4>#bts#army#friends</h4>
+          <div class="open-chat__content__members">
+            <img src="screenshots/copy.jpeg" />
+            <span class="open-chat__content__members__number">802 Members</span>
+            <div class="divider">|</div>
+            <span class="open-chat__content__members__active">Active</span>
+          </div>
+        </div>
+        <div class="open-chat__content">
+          <div class="open-chat__content__image__section">
+            <img
+              class="open-chat__content__image"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/0d/%E2%80%98LG_Q7_BTS_%EC%97%90%EB%94%94%EC%85%98%E2%80%99_%EC%98%88%EC%95%BD_%ED%8C%90%EB%A7%A4_%EC%8B%9C%EC%9E%91_%2842773472410%29_%28cropped%29.jpg"
+            />
+            <div class="open-chat__content__likes">
+              <i class="fas fa-heart fa-xs"></i>326
             </div>
-            <div class="open-chat__content">
-                <div class="open-chat__content__image__section">
-                    <img class="open-chat__content__image" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/%E2%80%98LG_Q7_BTS_%EC%97%90%EB%94%94%EC%85%98%E2%80%99_%EC%98%88%EC%95%BD_%ED%8C%90%EB%A7%A4_%EC%8B%9C%EC%9E%91_%2842773472410%29_%28cropped%29.jpg"/>
-                <div class="open-chat__content__likes"><i class="fas fa-heart fa-xs"></i>326</div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </main>
     <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="chats.html"><span class="nav__notification badge">3</span><i class="far fa-comment fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="more.html"><span id="nav__dot"></span><i class="fas fa-ellipsis-h fa-2x"></i></a></li>
-        </ul>
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html"
+            ><span class="nav__notification badge">3</span
+            ><i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><span id="nav__dot"></span><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
     </nav>
     <div id="no-mobile">
-        <span>YOUR SCREEN IS TOO BIG TO ACCESS RMRTALK</span>
+      <span>YOUR SCREEN IS TOO BIG TO ACCESS RMRTALK</span>
     </div>
-    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

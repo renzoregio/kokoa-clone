@@ -1,29 +1,43 @@
-.status-bar{
-    display:flex;
-    justify-content:space-between;
-    margin:4px 7px;
-    top:0;
-    width:100%;
-    position: fixed;
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 7px;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #242021;
+  color: white;
 }
-.status-bar__column{
-    width:33%;
+.status-bar__column {
+  width: 33%;
 }
-.status-bar__column:first-child{
-    position: relative;
-    right: -7px;
+.status-bar__column:first-child {
+  position: relative;
+  right: -7px;
 }
-.status-bar__column:nth-child(2){
-    text-align: center;
-    font-weight: bold;
+.status-bar__column:nth-child(2) {
+  text-align: center;
+  font-weight: bold;
 }
-.status-bar__column:last-child{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position:relative;
-    left: -14px;
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  left: -14px;
 }
-.status-bar__column .fa-battery-full{
-    margin:2px 5px;
+
+@keyframes batteryEffect {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.status-bar__column:last-child i {
+  color: red;
+  animation: batteryEffect 0.4s linear infinite;
+  margin-left: 5px;
 }

@@ -1,148 +1,147 @@
-@keyframes icon-hover-animation{
-    from{
-        transform: none;
-    }
-    to{
-        transform: scale(1.5);
-        color: goldenrod;
-    }
+.find-icons {
+  display: flex;
+  justify-content: space-between;
 }
 
-
-.find-icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.find-icons__icon{
-    display: flex;
-    align-items: center;
-    flex-direction: column;   
-    justify-content: space-between;
-    text-align: center;
-    width: 15%;
+@keyframes iconAnimation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scaleY(1.5px);
+    box-shadow: 0px 1px 0px 2px;
+  }
 }
 
-
-.find-icons__icon i{
-    font-size: 35px;
-}
-.find-icons__icon span{
-    padding-top: 20px;
-}
-
-.find-icons__icon:hover{
-    animation: icon-hover-animation 0.5s ease-in-out forwards;
+.find-icons button {
+  background-color: #242021;
+  font-size: 35px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
 }
 
-.recommended__friends{
-    height: 250px;
-    margin-top: 35px;
-    border-top: var(--border-line);
-    border-bottom: var(--border-line);  
+.find-icons button i {
+  color: white;
 }
- 
-.recommended__friends h6{
-    padding-top: 25px;
-    color: var(--gray);
-    font-size: 17px;
+
+.find-icons button:focus {
+  animation: iconAnimation 0.1s linear forwards;
+  outline: none;
 }
-.recommended__friends span{
-    margin: 90px 0px;
-    text-align: center;
-    display: block;
-    font-size: 20px;
-    color: var(--gray);
+
+.find-icons-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-.open-chat__header{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+.recommended__friends {
+  height: 250px;
+  margin-top: 35px;
+  border-top: var(--border-line);
+  border-bottom: var(--border-line);
 }
-.open-chat__header h2{
-    font-size: 17px;
-    color: var(--gray);
+
+.recommended__friends h6 {
+  padding-top: 25px;
+  font-size: 17px;
 }
-.open-chat__header h4{
-    font-size: 16px;
-    color: rgba(87, 87, 87, 0.4);
+.recommended__friends span {
+  margin: 90px 0px;
+  text-align: center;
+  display: block;
+  font-size: 20px;
 }
-.open-chat{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 }
-.open-chat__content{
-    padding-top: 45px;
+.open-chat__header h2 {
+  font-size: 17px;
 }
-.open-chat__content h2{
-    font-size: 20px;
-    padding-bottom: 10px;
+.open-chat__header h4 {
+  font-size: 16px;
+  color: rgba(189, 189, 189);
 }
-.open-chat__content h4{
-    font-size: 18px;
-    text-transform: uppercase;
-    color: rgba(87, 87, 87, 0.4);
-    padding-bottom: 10px;
+.open-chat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.open-chat__content {
+  padding-top: 45px;
+}
+.open-chat__content h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.open-chat__content h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgba(87, 87, 87, 0.4);
+  padding-bottom: 10px;
 }
 .open-chat__content__members {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-.open-chat__content__members img{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    padding-right: 7px;
+.open-chat__content__members img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding-right: 7px;
 }
-.open-chat__content__members__number{
-    color: rgba(87, 87, 87, 0.4);
+.open-chat__content__members__number {
+  color: rgba(87, 87, 87, 0.4);
 }
-.open-chat__content__members .divider{
-    padding: 0px 5px;
+.open-chat__content__members .divider {
+  padding: 0px 5px;
 }
-.open-chat__content__members__active{
-    color: #ffb0e0;
-}
-
-.open-chat__content__image__section{
-    position: relative;
+.open-chat__content__members__active {
+  color: #ffb0e0;
 }
 
-.open-chat__content__image{
-    height: 120px;
-    width: 120px;
-    border-radius: 5px;
-    position: relative;
+.open-chat__content__image__section {
+  position: relative;
 }
-.open-chat__content__likes{
-    height: 20px;
-    width: 70px;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 5px;
-    border-radius: 20px;
-    color: white;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-size:15px;
+
+.open-chat__content__image {
+  height: 120px;
+  width: 120px;
+  border-radius: 5px;
+  position: relative;
 }
-@keyframes heartbeat-icon{
-    0%{
-        transform: scale(2);
-    }
-    50%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(2);
-       
-    }
+.open-chat__content__likes {
+  height: 20px;
+  width: 70px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 15px;
 }
-.open-chat__content .fa-heart{
-    animation: heartbeat-icon 0.7s linear infinite;
-    color: red;
+@keyframes heartbeat-icon {
+  0% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+.open-chat__content .fa-heart {
+  animation: heartbeat-icon 0.7s linear infinite;
+  color: red;
 }

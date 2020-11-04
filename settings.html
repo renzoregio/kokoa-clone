@@ -1,123 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings - RMRTalk</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="status-bar">
-        <div class="status-bar__column">
-            <span>Verizon</span>
-            <i class="fas fa-wifi"></i>
-        </div>
-        <div class="status-bar__column">
-            <span>11:11</span>
-        </div>
-        <div class="status-bar__column">
-            <span>infinite%</span>
-            <i class="fas fa-battery-full fa-lg"></i>
-            <i class="fas fa-bolt"></i>
-        </div>
+      <div class="status-bar__column">
+        <span>Verizon</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>11:11</span>
+      </div>
+      <div class="status-bar__column">
+        <span>12%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+      </div>
     </div>
     <header class="header-alt-screen">
-        <div class="header-alt-screen-column">
-            <button onclick="goBack()"><i class="fas fa-chevron-left fa-sm"></i></button>
-        </div>
-        <script>
-            function goBack(){
-                window.history.back();
-            }
-        </script>
-        <div class="header-alt-screen-column">
-            <h1 class="screen-header-title">Settings</h1>
-        </div>
-        <div class="header-alt-screen-column">
-            <span><i class="fas fa-search"></i></span>
-        </div>
+      <div class="header-alt-screen-column">
+        <button onclick="goBack()">
+          <i class="fas fa-chevron-left fa-sm"></i>
+        </button>
+      </div>
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+      <div class="header-alt-screen-column">
+        <h1 class="screen-header-title">Settings</h1>
+      </div>
+      <div class="header-alt-screen-column">
+        <span><i class="fas fa-search"></i></span>
+      </div>
     </header>
     <main class="main-screen main-settings">
-        <ul class="settings-list">
+      <ul class="settings-list">
         <li class="settings-options">
-            <div class="settings-options__column">
-                <i class="fas fa-bullhorn"></i>
-                <span class="settings-options-text">Notices</span>
-            </div>
-            <div class="settings-options__column"></div>
+          <div class="settings-options__column">
+            <i class="fas fa-bullhorn"></i>
+            <span class="settings-options-text">Notices</span>
+          </div>
+          <div class="settings-options__column"></div>
         </li>
         <li class="settings-options">
-            <div class="settings-options__column">
-                <i class="fas fa-flask"></i>
-                <span class="settings-options-text">RMRTalk Lab</span>
-            </div>
-            <div class="settings-options__column"></div>
+          <div class="settings-options__column">
+            <i class="fas fa-flask"></i>
+            <span class="settings-options-text">RMRTalk Lab</span>
+          </div>
+          <div class="settings-options__column"></div>
         </li>
         <li class="settings-options">
-            <div class="settings-options__column">
-                <i class="fas fa-info-circle"></i>
-                <span class="settings-options-text">Version</span>
-            </div>
-            <div class="settings-options__column">Latest Version</div>
+          <div class="settings-options__column">
+            <i class="fas fa-info-circle"></i>
+            <span class="settings-options-text">Version</span>
+          </div>
+          <div class="settings-options__column">Latest Version</div>
         </li>
         <div class="settings-screen__divider"></div>
         <li class="settings-options">
-            <div class="settings-options__column">
-                <i class="fas fa-user-secret"></i>
-                <span>Privacy</span>
-            </div>
-            <div class="settings-options__column">Incognito Mode</div>
+          <div class="settings-options__column">
+            <i class="fas fa-user-secret"></i>
+            <span>Privacy</span>
+          </div>
+          <div class="settings-options__column">Incognito Mode</div>
         </li>
         <li class="settings-options">
-            <div class="settings-options__column">
-                <i class="far fa-bell"></i>
-                <span>Notifications</span>
-            </div>
-            <div class="settings-options__column"></div>
+          <div class="settings-options__column">
+            <i class="far fa-bell"></i>
+            <span>Notifications</span>
+          </div>
+          <div class="settings-options__column"></div>
         </li>
         <li class="settings-options">
-            <div class="settings-options__column">
-                <i class="fas fa-users"></i>
-                <span>Friends</span>
-            </div>
-            <div class="settings-options__column"></div>
+          <div class="settings-options__column">
+            <i class="fas fa-users"></i>
+            <span>Friends</span>
+          </div>
+          <div class="settings-options__column"></div>
         </li>
         <li class="settings-options">
-            <div class="settings-options__column">
-                <i class="far fa-sun"></i>
-                <span>Display</span>
-                <i class="fas fa-question-circle"></i>
-            </div>
-            <div class="settings-options__column"></div>
+          <div class="settings-options__column">
+            <i class="far fa-sun"></i>
+            <span>Display</span>
+            <i class="fas fa-question-circle"></i>
+          </div>
+          <div class="settings-options__column"></div>
         </li>
         <li class="settings-options">
-            <div class="settings-options__column">
-                <i class="fas fa-palette"></i>
-                <span>Themes</span>
-                <i class="fas fa-question-circle"></i>
-            </div>
-            <div class="settings-options__column">Default Theme</div>
+          <div class="settings-options__column">
+            <i class="fas fa-palette"></i>
+            <span>Themes</span>
+            <i class="fas fa-question-circle"></i>
+          </div>
+          <div class="settings-options__column">Default Theme</div>
         </li>
         <li class="settings-options">
-            <div class="settings-options__column">
-                <i class="fas fa-phone-volume"></i>
-                <span>Call</span>
-            </div>
-            <div class="settings-options__column"></div>
+          <div class="settings-options__column">
+            <i class="fas fa-phone-volume"></i>
+            <span>Call</span>
+          </div>
+          <div class="settings-options__column"></div>
         </li>
-    </ul>
-</main>
+      </ul>
+    </main>
     <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="chats.html"><span class="nav__notification badge">3</span><i class="fas fa-comment fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="more.html"><span id="nav__dot"></span><i class="fas fa-ellipsis-h fa-2x"></i></a></li>
-        </ul>
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html"
+            ><span class="nav__notification badge">3</span
+            ><i class="fas fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><span id="nav__dot"></span><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
     </nav>
     <div id="no-mobile">
-        <span>YOUR SCREEN IS TOO BIG TO ACCESS RMRTALK</span>
+      <span>YOUR SCREEN IS TOO BIG TO ACCESS RMRTALK</span>
     </div>
-    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
